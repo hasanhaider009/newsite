@@ -1,11 +1,11 @@
 .bannertext{
   background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(54, 54, 54, 0.91) 100%);
+background: linear-gradient(180deg, rgba(83, 83, 83, 0.548) 0%, rgba(54, 54, 54, 0.993) 100%);
 
 }
 .bannertext1{
   background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(97, 97, 97, 0.637) 100%);
+background: linear-gradient(0deg, rgba(128, 128, 128, 0) 0%, rgba(97, 97, 97, 0.637) 100%);
 
 }
 body{

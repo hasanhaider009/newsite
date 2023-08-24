@@ -41,7 +41,7 @@ export default function DefaultCarousel() {
                   >
                   Kompetenz und Innovation
                   </p>
-                  <p className="text-sm lg:text-lg text-white text-center lg:mb-6 lg:px-56 text-justify">GAE erbringt Dienstleistungen und entwickelt Lösungen in den Arbeitsfeldern:
+                  <p className="text-sm lg:text-lg text-white text-center lg:mb-6 xl:px-56 text-justify">GAE erbringt Dienstleistungen und entwickelt Lösungen in den Arbeitsfeldern:
 
 Erdkabel & Freileitungen – Geothermie, Wärme & Kälte – Standorterkundung, geotechnische und bodenkundliche Laboranalysen & Baubegleitung – Geotechnik – UAV Monitoring & Infrastruktur GIS-Modellierung und Numerische Simulationen & KI.
 
