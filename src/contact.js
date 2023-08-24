@@ -14,7 +14,7 @@ export default function Contact() {
             <img src={con} alt='contact'/>
 
 
-            <div className="text-center grid sm:grid-cols-3 text-xl gap-0 text-sm text-stone-50 sm:px-48 container mx-auto py-16 items-center place-items-center ">
+            <div className="text-center grid lg:grid-cols-3 text-xl gap-0 text-sm text-stone-50 sm:px-48 container mx-auto py-16 items-center place-items-center ">
                 <div className="">
                     <p>GeoAnalysis Engineering GmbH,<br/> Schauenburgerstrasse 116, <br/>Kiel 24118 </p>
                 </div>
