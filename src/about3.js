@@ -7,7 +7,7 @@ export default function About3(){
 
             <div className='rounded-lg mt-10 flex flex-nowrap xl:px-20 px-6 md:flex-row flex-col justify-center content-center  md:pb-16'>
             <div className="text-sm xl:text-xl font-normal text-justify block sm:pr-8 w-auto md:max-w-[50vw] md:order-1 order-2 justify-center content-center md:pb-0 pb-6 flex flex-col">
-            <p>
+            <p  className='pt-2'>
                     GAE bietet vollständig gekoppelte
                     thermo-hydromechanisch-diffusive Simulationen für
                     eingeerdete Hochspannungskabel inklusive der
@@ -16,13 +16,13 @@ export default function About3(){
                     landwirtschaftlichen Ertrag.
                   </p>
                   
-                  <p >
+                  <p  className='pt-2'>
                    GAE bietet ein thermisch stabiles Materialdesign für
                     Erdkabel und Rohre an. Ausgangpunkt ist dabei, dass durch
                     die Erkundung detektierte Bodenmaterial und dessen
                     Bodenmanagement.
                   </p>
-                  <p>
+                  <p className='pt-2'>
                     Mit Hilfe von UAV’s wird das Luftmonitoring mit den
                     numerischen Modellen des Untergrunds gekoppelt, so dass
                     vollständige Informations-basierte Modelle mit Hilfe der
@@ -30,12 +30,12 @@ export default function About3(){
                     Zwillinge) betrieben werden können.
                   </p>
 
-                  <p>
+                  <p className='pt-2'>
                     Die Standorterkundung als auch Laborversuche werden mit
                     modernsten Methoden, wie GIS und KI, für die Auswertung mit
                     herangezogen.
                   </p>
-                  <p>
+                  <p className='pt-2'>
                     Neben klassischen Bemessungen in geotechnischen
                     Fragestellungen, werden durch Einsatz von fortschrittlichen
                     numerischen Methoden, in Statik und Dynamik der Geotechnik,
