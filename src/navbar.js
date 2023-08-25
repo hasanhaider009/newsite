@@ -13,7 +13,7 @@ export default function NavbarWithCTAButton() {
       <Navbar.Brand href="/">
         <img
           alt="GeoAI logo"
-          className="h-16 sm:h-24"
+          className="md:h-16 sm:h-24 h-16"
           src={logo}
         />
       </Navbar.Brand>
