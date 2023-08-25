@@ -9,64 +9,77 @@ export default function Impressum() {
 
   return (
     <>
+      <section className=" bg-white flex flex-col p-12 content-center  pt-20 items-center text-justify" >
   
-      <section className="section_1 bg-white flex flex-row justify-center text-justify" >
-        <div className="container p-24">
-          <div className=" justify-content-center">
-            <h4 className="text-4xl font-semibold text-center my-6">Impressum</h4>
-            <div  className="grid grid-cols-4">
-              <div>
-                <h5>Adresse</h5>
-                <ul>
-                  <li>GeoAnalysis Engineering GmbH</li>
-                  <li> Schauenburgerstrasse 116</li>
-                  <li>Kiel, 24118, Deutschland</li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="content">
-                <h5>Kontakt</h5>
-                <ul>
-                  <li>Telefon: +49 431 53032960</li>
-                  <li>E-Mail: info@geoanalysis-engineering.de</li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="content">
-                <h5>Vertretungsberechtigter Geschäftsführer:</h5>
-                <ul>
-                  <li>Dr.-Ing. Zarghaam Haider Rizvi</li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="content">
-                <h5>Legale Information</h5>
-                <ul>
-                  <li>
-                    Registergericht: Amtsgericht Kiel Registernummer: HRB 21359
-                    KI
-                  </li>
-                  <li>Umsatzsteuer-Identifikationsnummer: DE328789954</li>
-                  <li>
-                    Plattform der EU-Kommission zur Online-Streitbeilegung:
-                    https://ec.europa.eu/odr
-                  </li>
-                  <li>
-                    Wir sind zur Teilnahme an einem Streitbeilegungsverfahren
-                    vor einer Verbraucherschlichtungsstelle weder verpflichtet
-                    noch bereit.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div className="text-4xl  font-semibold">Impressum</div>
 
-          <div className="row row_2 justify-content-center">
-            <h4>Datenschutzerklärung</h4>
-            <div className="content">
+        <div className="grid m-10  md:grid-cols-2 container grid-cols-1 text-center gap-8">
+        <div>
+        <h2 className="text-xl text-left pl-6">Adresse</h2>
+        <ul className="list-disc list-inside text-left p-2 flex flex-nowrap flex-col ">
+          <li>
+          GeoAnalysis Engineering GmbH
+          </li>
+          <li>
+          Schauenburgerstrasse 116
+          </li>
+          <li>
+          Kiel, 24118, Deutschland 
+          </li>
+        </ul>      
+        
+        </div>
+
+        <div>
+        <h2 className="text-xl text-left pl-6">Kontakt</h2>
+        <ul className="list-disc list-inside text-left p-2 flex flex-wrap flex-col ">
+          <li>
+          Telefon: +49 431 53032960
+          </li>
+          <li>
+          E-Mail: info@geoanalysis-engineering.de
+          </li>
+          
+        </ul>      
+        
+        </div>
+
+        <div>
+        <h2 className="text-xl text-left pl-6">Vertretungsberechtigter Geschäftsführer:</h2>
+        <ul className="list-disc list-inside text-left p-2 flex flex-wrap flex-col " >
+          <li>
+          Dr.-Ing. Zarghaam Haider Rizvi
+          </li>
+          
+        </ul>      
+        
+        </div>
+        <div>
+        <h2 className="text-xl text-left pl-6">Legale Information</h2>
+        <ul className="list-disc list-inside text-left p-2 flex flex-wrap flex-col ">
+          <li>
+          Registergericht: Amtsgericht Kiel Registernummer: HRB 21359 KI
+          </li>
+          <li>
+          Umsatzsteuer-Identifikationsnummer: DE328789954
+          </li>
+          <li>
+          Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/odr
+          </li>
+          <li>
+          Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
+          </li>
+        </ul>      
+        
+        </div>
+
+
+
+        </div>
+
+          <div >
+            <h4 className="text-4xl font-semibold text-center pb-10">Datenschutzerklärung</h4>
+            
               <h5>1) Einleitung und Kontaktdaten des Verantwortlichen</h5>
               <ul>
                 <li>
@@ -99,7 +112,7 @@ export default function Impressum() {
                   erkennen.
                 </li>
               </ul>
-            </div>
+            
             <div className="content">
               <h5>2) Datenerfassung beim Besuch unserer Website</h5>
               <ul>
@@ -306,8 +319,8 @@ export default function Impressum() {
                 sonstige Weise verarbeitet wurden, nicht mehr notwendig sind.
               </p>
             </div>
-          </div>
-        </div>
+            </div>
+        
       </section>
     </>
   );
