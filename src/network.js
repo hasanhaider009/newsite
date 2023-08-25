@@ -19,7 +19,7 @@ import logo14 from './assets/icons/icon14.png'
 export default function Network() {
     return(
         <div className=" sm:h-[40vh] h-[70vh] target3 flex flex-col content-center items-center justify-items-center place-items-center">
-        <h2 className='text-center text-black absolute z-10 font-normal pb-4 sm:text-5xl text-2xl sm:pt-6 pt-2 underline decoration-2 sm:underline-offset-[16px] underline-offset-[8px]'>Netzwerk</h2>
+        <h2 className='text-center text-black absolute z-10 font-normal pb-4 sm:text-5xl text-4xl sm:pt-6 pt-2 underline decoration-2 sm:underline-offset-[16px] underline-offset-[8px]'>Netzwerk</h2>
         <Carousel className=''>
         <div className='flex sm:flex-row flex-col flex-wrap content-center sm:mt-6 mt-6 items-center justify-items-center place-items-center'>
     <img className='p-3' src ={logo1} alt ='logo'/>
