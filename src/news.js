@@ -11,43 +11,43 @@ import DismissableModal4 from './newsModals/modal4';
 
 export default function News(){
     return(
-        <div className="sm:h-[100vh] h-[140vh] target2">
-        <h2 className="text-center font-normal max-h-[20vh] text-black pb-4 pt-16 sm:text-6xl text-4xl underline decoration-2 underline-offset-[16px] md:pt-16 pt-8">News</h2>
-        <Carousel className='sm:max-h-[60vh] h-[120vh] sm:my-20'>
-        <div className='grid sm:grid-cols-2 grid-cols-1 gap-1 mx-auto place-items-center container'>
-            <div className='border-2 my-6 mx-16 sm:h-[70vh] sm:w-auto w-[70vw] h-[50vh] sm:py-10  bg-white'>
-                <img src={n1} alt='service'/>
-                <p className='text-center min-[1800px]:text-2xl mx-8 py-0 font-semibold min-[1800px]:py-10'>Horizontale Erdwärmetauscher zum Heizen und Kühlen – numerische Modellierung und Optimierung GIS-Modellierung</p>
-                <div className='container  justify-items-center flex flex-col place-items-center pt-4'>
+        <div className="h-fit target2">
+        <h2 className="text-center font-normal max-h-[20vh] pb-10 text-black sm:text-6xl text-4xl underline decoration-2 underline-offset-[16px] md:pt-16 pt-8">News</h2>
+        <Carousel className='sm:h-screen h-[120vh] sm:pb-20 pb-10 container-md'>
+        <div className='grid grid-cols-2  mx-auto place-items-center max-h-full container-lg'>
+            <div className='border-2  mx-16 sm:col-span-1 col-span-2 h-full pb-10 container-md bg-white shadow-md rounded-md'>
+                <img className='' src={n1} alt='service'/>
+                <p className='text-center xl:text-xl lg:mx-24 mx-8 my-4 font-semibold '>Horizontale Erdwärmetauscher zum Heizen und Kühlen – numerische Modellierung und Optimierung GIS-Modellierung</p>
+                <div className='container  justify-items-center flex flex-col flex-nowrap place-items-center pt-4'>
 
                 <DismissableModal/>
                 </div>
             </div>
-            <div className='border-2 my-6 mx-16 sm:h-[70vh] sm:w-auto w-[70vw] h-[50vh] sm:py-10  bg-white'>
-                <img src={n2} alt='service'/>
-                <p className='text-center min-[1800px]:text-2xl mx-8 py-0 font-semibold min-[1800px]:py-4'>Bewertung der Auswirkungen der betriebsbedingten Bodenerwärmung auf den Stoff-, Wasser- und Wärmehaushalt im Hinblick auf das „Versuchsfeld Umspannwerk Wolmirstedt“ in Sachsen-Anhalt.</p>
-                <div className='container  justify-items-center flex flex-col place-items-center pt-0'>
+            <div className='border-2 sm:mt-0 mt-4  mx-16 sm:col-span-1 col-span-2 h-full pb-10 container-md bg-white shadow-md rounded-md'>
+                <img className='' src={n2} alt='service'/>
+                <p className='text-center xl:text-xl lg:mx-24 mx-8 my-4  font-semibold '>Bewertung der Auswirkungen der betriebsbedingten Bodenerwärmung auf den Stoff-, Wasser- und Wärmehaushalt im Hinblick auf das „Versuchsfeld Umspannwerk Wolmirstedt“ in Sachsen-Anhalt.</p>
+                <div className='container  justify-items-center flex flex-col flex-nowrap place-items-center pt-4'>
 
                 <DismissableModal2/>
                 </div>
             </div>
         </div>
 
-        <div className='grid sm:grid-cols-2 grid-cols-1 gap-1 mx-auto place-items-center container'>
-            <div className='border-2 my-6 mx-16 sm:h-[70vh] sm:w-auto w-[70vw] h-[50vh] sm:py-10  bg-white'>
-                <img src={n1} alt='service'/>
-                <p className='text-center min-[1800px]:text-2xl mx-8 py-0 font-semibold min-[1800px]:py-10'>Horizontale Erdwärmetauscher zum Heizen und Kühlen – numerische Modellierung und Optimierung</p>
-                <div className='container  justify-items-center flex flex-col place-items-center pt-4'>
+        <div className='grid grid-cols-2  mx-auto place-items-center max-h-full container-lg'>
+            <div className='border-2  mx-16 sm:col-span-1 col-span-2 h-full pb-10 container-md bg-white shadow-md rounded-md'>
+                <img className='' src={n1} alt='service'/>
+                <p className='text-center xl:text-xl lg:mx-24 mx-8 my-4  font-semibold '>Horizontale Erdwärmetauscher zum Heizen und Kühlen – numerische Modellierung und Optimierung</p>
+                <div className='container  justify-items-center flex flex-col flex-nowrap place-items-center pt-4'>
 
                 <DismissableModal/>
                 </div>
             </div>
 
-            <div className='border-2 my-6 mx-16 sm:h-[70vh] sm:w-auto w-[70vw] h-[50vh] sm:py-10  bg-white'>
-                <img src={n3} alt='service'/>
-                <p className='text-center min-[1800px]:text-2xl mx-8  py-0 font-semibold min-[1800px]:py-10'>Standort-Stadt-Interaktionsmodellierung für Erdbebenszenarien durch fortschrittliche
+            <div className='border-2 sm:mt-0 mt-4  mx-16 sm:col-span-1 col-span-2 h-full pb-10 container-md bg-white shadow-md rounded-md'>
+                <img className='' src={n3} alt='service'/>
+                <p className='text-center xl:text-xl lg:mx-24 mx-8 my-4   font-semibold '>Standort-Stadt-Interaktionsmodellierung für Erdbebenszenarien durch fortschrittliche
                 Hybrid-BEM-FEM</p>
-                <div className='container  justify-items-center flex flex-col place-items-center pt-4'>
+                <div className='container  justify-items-center flex flex-col flex-nowrap place-items-center pt-4'>
 
                 <DismissableModal3/>
                 </div>
