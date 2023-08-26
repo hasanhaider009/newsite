@@ -8,21 +8,25 @@ import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import Contact from './contact';
 import About2 from './about2';
 import Services from './services';
+import ScrollToTop from './stp';
 
 
 
 function App() {
   return (  
     <div>
-<Router>
     
+<Router>
+<ScrollToTop />
     <NavbarWithCTAButton />
       <Routes>
+      
       <Route exact path='/' element={ <Home/> }/>
       <Route path='/impressum' element={<Impressum/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/about' element={<About2/>}/>
-      <Route path='/services' element={<Services/>}/>
+      <Route path='/services' element={<Services/>}/>S
+      <Route path='/home' element={<Home/>}/>
 
       </Routes>
     <FooterSitemapLinks/>

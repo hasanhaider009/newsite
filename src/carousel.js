@@ -7,7 +7,7 @@ import main4 from './assets/landing3.JPG'
 
 export default function DefaultCarousel() {
   return (
-    <div className='sm:h-screen h-[90vh] block'>
+    <div className='h-fit block'>
     <Carousel className=' lg:h-screen md:h-[60vh] sm:h-[50vh] h-[30vh] rounded-none inset-x-0 lg:top-0 top-0'>
       <img
       className='h-full'
@@ -26,7 +26,7 @@ export default function DefaultCarousel() {
       />
       
     </Carousel>
-    <div className="inline-block bannertext xl:flex-none flex flex-col flex-nowrap md:p-2 sm:pb-10 inset-x-0 sm:bottom-0 pt-2 md:h-[40vh] sm:h-[50vh] lg:h-[45vh] h-[60vh] px-6 absolute justify-center">
+    <div className="inline-block bannertext xl:flex-none flex flex-col flex-nowrap md:p-2 sm:pb-10 inset-x-0 sm:bottom-0 pt-2 md:h-[40vh] sm:h-[50vh] lg:h-[45vh] h-[60vh] px-6 lg:absolute justify-center">
 
                 
                   <h1

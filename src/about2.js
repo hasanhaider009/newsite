@@ -1,12 +1,16 @@
 import about from './assets/UberUns1.JPG';
+import { useEffect } from 'react';
 
 export default function About2(){
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, [])
     return(
         <div id="about" className="max-h-fit bg-no-repeat bg-cover bg-fixed text-white target1">
         <h2 className="text-center font-normal pb-4 pt-16 sm:text-6xl text-4xl underline decoration-2 underline-offset-[16px] xl:pt-16 pt-8">Über uns</h2>
         <div className='rounded-lg mt-10 flex flex-nowrap xl:px-16 px-6 md:flex-row flex-col justify-center content-center  md:pb-16'>
                 <img className='inline-block border-slate-800 justify-center md:max-h-[40vh] md:max-w-[50vw] aspect-video xl:order-1 order-1 xl:my-12 my-4' src={about} alt='vision'/>
-            <div className="text-sm xl:text-xl font-normal text-justify block sm:pl-8 w-auto md:max-w-[50vw] xl:order-1 order-2 justify-center content-center pb-6 flex flex-col">
+            <div className="text-sm xl:text-xl lg:text-lg md:text-base font-normal text-justify block sm:pl-8 w-auto md:max-w-[50vw] xl:order-1 order-2 justify-center content-center pb-6 flex flex-col">
             <p>
                     Unsere Kompetenzen liegen in der Analyse und Modellierung
                     von Hochspannungs- und Höchstspannungs-Erdkabeln,
