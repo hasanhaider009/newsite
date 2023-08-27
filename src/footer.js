@@ -7,7 +7,7 @@ export default function FooterSitemapLinks() {
   return (
     <Footer className='target1 rounded-none'>
       <div className="w-full">
-        <div className="grid w-full grid-cols-2 gap-8 px-12 py-8 md:grid-cols-4">
+        <div className="grid w-full grid-cols-2 gap-8 px-12 py-8 md:grid-cols-4 bg-[#272829]">
           <div>
             <Footer.Title title="Adresse" />
             <div className='text-white'>
@@ -50,7 +50,7 @@ export default function FooterSitemapLinks() {
             </Footer.LinkGroup>
             </div>
         </div>
-        <div className="w-full bg-gray-700 px-12 py-6 sm:flex sm:items-center sm:justify-between bg-zinc-950">
+        <div className="w-full px-12 py-6 sm:flex sm:items-center sm:justify-between bg-zinc-950">
           <Footer.Copyright
             by="GeoAnalysis Engineering™"
             href="#"
