@@ -1,6 +1,6 @@
 .bannertext{
-  background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(83, 83, 83, 0.548) 0%, rgba(54, 54, 54, 0.993) 100%);
+  background: rgb(255,255,255) !important;
+background: linear-gradient(180deg, rgba(83, 83, 83, 0.548) 0%, rgba(54, 54, 54, 0.993) 100%) !important;
 
 }
 .bannertext1{

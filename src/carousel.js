@@ -26,18 +26,18 @@ export default function DefaultCarousel() {
       />
       
     </Carousel>
-    <div className="inline-block bannertext xl:flex-none flex flex-col flex-nowrap md:p-2 sm:pb-10 inset-x-0 sm:bottom-0 pt-2 md:h-[40vh] sm:h-[50vh] lg:h-[45vh] h-[60vh] px-6 lg:absolute justify-center">
+    <div className="bannertext xl:flex-none flex flex-col flex-nowrap md:p-2 sm:pb-10 inset-x-0 sm:bottom-0 pt-2 md:h-[40vh] sm:h-[50vh] lg:h-[45vh] h-[60vh] px-6 lg:absolute justify-center">
 
                 
                   <h1
-                   className="text-center text-white font-base pb-4 lg:text-6xl md:text-4xl text-3xl sm:pt-16 md:pt-16"
+                   className="text-center text-white font-base pb-2 xl:text-6xl lg:text-4xl text-3xl sm:pt-16 md:pt-8 md:mx-32"
                 
                   >
                   Willkommen bei GAE
                   
                   </h1>
                   <p
-                   className="text-center text-white pb-8 lg:text-3xl md:text-2xl text-xl"
+                   className="text-center text-white pb-4 lg:text-3xl md:text-2xl text-xl"
                   >
                   Kompetenz und Innovation
                   </p>

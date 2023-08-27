@@ -18,9 +18,11 @@ import logo14 from './assets/icons/icon14.png'
 
 export default function Network() {
     return(
-        <div className=" sm:h-[55vh] h-[70vh] md:h-[55vh] xl:h-[40vh] target3 flex flex-col content-center items-center justify-items-center place-items-center">
-        <h2 className='text-center text-black absolute z-10 font-normal pb-4 sm:text-5xl text-4xl sm:pt-6 pt-2 underline decoration-2 sm:underline-offset-[16px] underline-offset-[8px]'>Netzwerk</h2>
-        <Carousel className=''>
+        <div className=" target3 flex flex-col content-center items-center justify-items-center place-items-center">
+        
+        <h2 className='text-center text-black z-10 font-normal pb-4 sm:text-5xl text-4xl sm:pt-6 pt-2 underline decoration-2 sm:underline-offset-[16px] underline-offset-[8px]'>Netzwerk</h2>
+        <Carousel  slideInterval={1500} className=' sm:h-[55vh] h-[500px] md:h-[55vh] xl:h-[40vh] pb-10'>
+        
         <div className='flex sm:flex-row flex-col flex-wrap content-center sm:mt-6 mt-6 items-center justify-items-center place-items-center'>
     <img className='p-3' src ={logo1} alt ='logo'/>
     <img className='p-3' src ={logo2} alt ='logo'/>
@@ -43,6 +45,7 @@ export default function Network() {
     </div>
     
     </Carousel>
+    
 
 
         </div>

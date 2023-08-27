@@ -1,58 +1,98 @@
-'use client';
+import { Fragment } from 'react'
+import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import logo from './assets/Logo.png'
+import Dropdown from './dropdown'
 
-import { Navbar } from 'flowbite-react';
-import logo from "./assets/Logo.png"
-import { Link } from 'react-router-dom';
-import Dropdown from './dropdown';
-import { Collapse } from 'flowbite';
+const navigation = [
+  { name: 'Startseite', href: '#/', current: false },
+  { name: 'Über uns', href: '#/about', current: false },
+  { name: 'Geschäftsbereiche', href: '#/services', current: false },  
+  { name: 'Kontakt', href: '#/contact', current: false },
+]
 
-export default function NavbarWithCTAButton() {
-  return (
-    <Navbar className='bannertext1 fixed z-10 w-full'
-      fluid 
-    >
-    <Link to ='/'>
-
-      <Navbar.Brand>
-        <img
-          alt="GeoAI logo"
-          className="md:h-16 sm:h-16 lg:h-24 h-16"
-          src={logo}
-        />
-      </Navbar.Brand>
-    </Link>
-      <div className="flex ">
-        <Navbar.Toggle />
-      </div>
-      
-      <Navbar.Collapse>
-        <Link to ='/home'>
-      <button class="inline-flex w-full justify-center gap-x-1.5 font-semibold rounded-lg border-2 text-black border-emerald-50 bg-zinc-200 text-slate-800 px-2 py-2 self-center hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 drop-shadow-md"
-            >
-          Startseite 
-        </button>
-          </Link>
-       
-          <Link to='/about'>
-      <button class="inline-flex w-full justify-center gap-x-1.5 font-semibold rounded-lg border-2 text-black border-emerald-50 bg-zinc-200 text-slate-800 px-2 py-2 self-center hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 drop-shadow-md"
-            >
-          Über uns
-        </button>
-          </Link>
-        
-          <Dropdown/>
-
-        <Link to ='/contact'>
-      <button class="inline-flex w-full justify-center gap-x-1.5 font-semibold rounded-lg border-2 text-black border-emerald-50 bg-zinc-200 text-slate-800 px-2 py-2 self-center hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 drop-shadow-md"
-            >
-          Kontakt
-        </button>
-          </Link>
-
-          
-      </Navbar.Collapse>
-    </Navbar>
-  )
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
 }
 
+export default function Navabar() {
+  return (
+    <Disclosure as="nav" className="bannertext1 fixed z-20 w-full">
+      {({ open }) => (
+        <>
+          <div className="mx-auto px-2 sm:px-6 lg:px-8 ">
+            <div className="relative flex h-20 items-center justify-between">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2  hover:bg-red-600 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="absolute -inset-0.5" />
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+                <div className="flex flex-shrink-0 items-end">
+                <a href='#/'>
 
+                  <img
+                    className="h-auto w-48"
+                    src={logo}
+                    alt="GeoAI"
+                  />
+
+                </a>
+                </div>
+                <div className="hidden sm:my-6 sm:ml-6 sm:block">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={classNames(
+                          item.current ? 'bg-red-600 text-white' : 'text-gray-900 hover:bg-red-600 bg-white hover:text-white',
+                          'rounded-md px-3 py-2 text-sm font-medium'
+                        )}
+                        aria-current={item.current ? 'page' : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                
+
+                {/* Profile dropdown */}
+                
+              </div>
+            </div>
+          </div>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current ? 'bg-red-600 text-white' : 'text-gray-900 hover:bg-red-600 bg-white hover:text-white',
+                    'block rounded-md px-3 py-2 text-base font-medium'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
+  )
+}
