@@ -24,8 +24,8 @@ function App() {
       <Route exact path='/' element={ <Home/> }/>
       <Route path='/impressum' element={<Impressum/>}/>
       <Route path='/contact' element={<Contact/>}/>
-      <Route path='/about' element={<About2/>}/>
-      <Route path='/services' element={<Services/>}/>S
+      <Route path='/about' element={<div className='pt-8'><About2/></div>}/>
+      <Route path='/services' element={<div className='pt-8 bg-[#D8D9DA]'><Services/></div>}/>S
       <Route path='/home' element={<Home/>}/>
 
       </Routes>

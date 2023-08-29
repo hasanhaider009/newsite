@@ -6,11 +6,10 @@ import About3 from './about3';
 import Services from './services';
 import News from './news';
 import { useEffect } from 'react';
+import ScrollToTop from './stp';
 
 export default function Home(){
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
+    <ScrollToTop/>
     
     return(
         <>

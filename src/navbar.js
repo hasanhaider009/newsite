@@ -5,7 +5,7 @@ import logo from './assets/Logo.png'
 import Dropdown from './dropdown'
 
 const navigation = [
-  { name: 'Startseite', href: '#/', current: false },
+  { name: 'Startseite', href: '#/home', current: false },
   { name: 'Über uns', href: '#/about', current: false },
   { name: 'Geschäftsbereiche', href: '#/services', current: false },  
   { name: 'Kontakt', href: '#/contact', current: false },

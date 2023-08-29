@@ -23,7 +23,7 @@ export default function DismissableModal() {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={() => props.setOpenModal(undefined)}>Schließen</Button>
+          <Button className='bg-red-600' onClick={() => props.setOpenModal(undefined)}>Schließen</Button>
         </Modal.Footer>
       </Modal>
     </>

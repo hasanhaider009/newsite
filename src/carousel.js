@@ -26,22 +26,22 @@ export default function DefaultCarousel() {
       />
       
     </Carousel>
-    <div className="bannertext xl:flex-none flex flex-col flex-nowrap md:p-2 sm:pb-10 inset-x-0 sm:bottom-0 pt-2 md:h-[40vh] sm:h-[50vh] lg:h-[45vh] h-[60vh] px-6 lg:absolute justify-center">
+    <div className="bannertext xl:flex-none flex flex-col flex-nowrap md:p-2 sm:pb-10 inset-x-0 sm:bottom-0 pt-2 md:h-[40vh] sm:h-[50vh] lg:h-[280px] xl:h-[45vh] h-[480px] px-6 lg:absolute justify-center">
 
                 
                   <h1
-                   className="text-center text-white font-base pb-2 xl:text-6xl lg:text-4xl text-3xl sm:pt-16 md:pt-8 md:mx-32"
+                   className="text-center text-white inline-block font-base pb-2 xl:text-6xl lg:text-4xl text-3xl sm:pt-16 md:pt-8 md:mx-32"
                 
                   >
                   Willkommen bei GAE
                   
                   </h1>
                   <p
-                   className="text-center text-white pb-4 lg:text-3xl md:text-2xl text-xl"
+                   className="text-center text-white pb-4 lg:text-2xl md:text-xl text-xl xl:text-xl"
                   >
                   Kompetenz und Innovation
                   </p>
-                  <p className="text-sm lg:text-base xl:text-lg text-white text-center sm:mb-6 xl:px-36 sm:pb-0 md:pb-10 text-justify">GAE erbringt Dienstleistungen und entwickelt Lösungen in den Arbeitsfeldern:
+                  <p className="max-[350px]:text-xs text-sm sm:text-base xl:text-lg text-white sm:mb-6 xl:px-36 lg:px-8 sm:pb-0 lg:pb-10 text-justify">GAE erbringt Dienstleistungen und entwickelt Lösungen in den Arbeitsfeldern:
 
 Erdkabel & Freileitungen – Geothermie, Wärme & Kälte – Standorterkundung, geotechnische und bodenkundliche Laboranalysen & Baubegleitung – Geotechnik – UAV Monitoring & Infrastruktur GIS-Modellierung und Numerische Simulationen & KI.
 
