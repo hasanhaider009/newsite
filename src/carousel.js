@@ -35,20 +35,22 @@ import main4 from './assets/landing3.JPG'
     return (
       
       <div className='h-fit block'>
-         
-    <Carousel className= 'lg:h-screen md:h-[60vh] sm:h-[50vh] h-[30vh] rounded-none inset-x-0 lg:top-0 top-0' >
-    
-            <img src={main3}/>
-          
-
-        
-            <img src={main4}/>
-    
-
-      
-            <img src={main2}/>
-  
-
+    <Carousel className=' lg:h-screen md:h-[60vh] sm:h-[50vh] h-[30vh] rounded-none inset-x-0 lg:top-0 top-0'>
+      <img
+      className='h-full'
+        alt="..."
+        src={main3}
+      />
+      <img
+      className='h-full'
+        alt="..."
+        src={main4}
+      />
+      <img
+      className='h-full'
+        alt="..."
+        src={main2}
+      />
       
         
 
