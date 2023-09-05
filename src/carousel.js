@@ -5,26 +5,57 @@ import main2 from './assets/landing1.jpg'
 import main3 from './assets/landing2.jpg'
 import main4 from './assets/landing3.JPG'
 
-export default function DefaultCarousel() {
-  return (
-    <div className='h-fit block'>
-    <Carousel className=' lg:h-screen md:h-[60vh] sm:h-[50vh] h-[30vh] rounded-none inset-x-0 lg:top-0 top-0'>
-      <img
-      className='h-full'
-        alt="..."
-        src={main3}
-      />
-      <img
-      className='h-full'
-        alt="..."
-        src={main4}
-      />
-      <img
-      className='h-full'
-        alt="..."
-        src={main2}
-      />
+
+
+
+//   const buttons = document.querySelectorAll("[data-carousel-button]")
+  
+//   buttons.forEach(button => {
+//     button.addEventListener("click", () => {
+//       const offset = button.dataset.carouselButton === "next" ? 1 : -1
+//       const slides = button
+//       .closest("[data-carousel]")
+//       .querySelector("[data-slides]")
       
+      
+//       const activeSlide = slides.querySelector("[data-active]")
+//       let newIndex = [...slides.children].indexOf(activeSlide) + offset
+      
+      
+//       if (newIndex < 0) newIndex = slides.children.length - 1 
+//       if(newIndex>= slides.children.length) newIndex = 0
+      
+//       slides.children[newIndex].dataset.active = true
+//       delete activeSlide.dataset.active
+//     })
+//   })
+  
+// }
+  export default function DefaultCarousel() {
+    return (
+      
+      <div className='h-fit block'>
+         
+    <Carousel className= 'lg:h-screen md:h-[60vh] sm:h-[50vh] h-[30vh] rounded-none inset-x-0 lg:top-0 top-0' >
+    
+            <img src={main3}/>
+          
+
+        
+            <img src={main4}/>
+    
+
+      
+            <img src={main2}/>
+  
+
+      
+        
+
+    
+
+
+
     </Carousel>
     <div className="bannertext xl:flex-none flex flex-col flex-nowrap md:p-2 sm:pb-10 inset-x-0 sm:bottom-0 pt-2 md:h-[40vh] sm:h-[50vh] lg:h-[280px] xl:h-[45vh] h-[480px] px-6 lg:absolute justify-center">
 
@@ -50,5 +81,4 @@ GAE arbeitet auf den Gebieten der Geotechnik, Geophysik, Bodenkunde, Geo-und Hyd
                   </div>
   )
 }
-
 

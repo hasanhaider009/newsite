@@ -2,7 +2,7 @@ import vision from './assets/about3.jpg';
 
 export default function About3(){
     return(
-        <div className="max-h-fit bg-no-repeat bg-cover bg-fixed text-white text-[#D8D9DA] target1">
+        <div className="max-h-fit bg-no-repeat bg-cover bg-fixed text-[#D8D9DA] target1">
             <h2 className="text-center  font-normal pb-4 sm:text-6xl text-4xl md:pt-16 pt-8 underline decoration-2 underline-offset-[16px]">Highlights</h2>
 
             <div className='rounded-lg mt-10 flex flex-nowrap xl:px-20 px-6 md:flex-row flex-col justify-center content-center  md:pb-16'>

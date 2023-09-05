@@ -1,11 +1,11 @@
 import vision from './assets/GAE_Vision.JPEG';
-import { useEffect } from 'react';
+
 
 
 export default function About(){
     
     return(
-        <div className="max-h-fit bg-no-repeat bg-cover bg-fixed text-white text-[#D8D9DA] target1">
+        <div className="max-h-fit bg-no-repeat bg-cover bg-fixed text-black text-[#D8D9DA] target2">
             <h2 className="text-center  font-normal pb-4 sm:text-6xl text-4xl md:pt-16 pt-8 underline decoration-2 underline-offset-[16px]">Unsere Vision</h2>
 
             <div className='rounded-lg mt-10 flex flex-nowrap xl:px-20 px-6 md:flex-row flex-col justify-center content-center  md:pb-16'>

@@ -8,7 +8,9 @@ import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import Contact from './contact';
 import About2 from './about2';
 import Services from './services';
-import ScrollToTop from './stp';
+import ScrollToTop from './stp'; 
+import About from './about';
+import Publication from './publication';
 
 
 
@@ -24,9 +26,10 @@ function App() {
       <Route exact path='/' element={ <Home/> }/>
       <Route path='/impressum' element={<Impressum/>}/>
       <Route path='/contact' element={<Contact/>}/>
-      <Route path='/about' element={<div className='pt-8'><About2/></div>}/>
-      <Route path='/services' element={<div className='pt-8 bg-[#D8D9DA]'><Services/></div>}/>S
+      <Route path='/about' element={<div className='pt-8'><About2/> <About/></div>}/>
+      <Route path='/services' element={<div className='pt-8 bg-[#D8D9DA]'><Services/></div>}/>
       <Route path='/home' element={<Home/>}/>
+      <Route path= '/publication' element={<div className=''><Publication/></div>} />
 
       </Routes>
     <FooterSitemapLinks/>

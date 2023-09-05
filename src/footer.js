@@ -7,7 +7,7 @@ export default function FooterSitemapLinks() {
   return (
     <Footer className='target1 rounded-none'>
       <div className="w-full">
-        <div className="grid w-full sm:text-sm text-xs grid-cols-2 gap-8 px-12 py-8 md:grid-cols-4 bg-[#272829]">
+        <div className="grid w-full sm:text-base text-xs grid-cols-2 gap-8 px-12 py-8 md:grid-cols-4 bg-[#272829]">
           <div>
             <Footer.Title title="Adresse" />
             <div className='text-white'>
