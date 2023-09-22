@@ -32,7 +32,7 @@ export default function News(){
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          950: {
+          1100: {
             slidesPerView: 2,
             spaceBetween: 40,
           },
@@ -60,7 +60,8 @@ und Höchstspannungskabel unter natürlichen Bedingungen</p>
         <SwiperSlide>
         <div className='border-2 w-fit my-6 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center '>
             <img className='aspect-video' loading='lazy' src={n1} alt='service'/>
-            <p className='text-center h-1/4 my-auto lg:text-lg text-base font-normal p-4'>Horizontale Erdwärmetauscher zum Heizen und Kühlen – numerische Modellierung und Optimierung</p>
+            <p className='text-center h-1/4 my-auto lg:text-lg text-base font-normal p-4'>Horizontale Erdwärmetauscher zum 
+            <br/>Heizen und Kühlen – numerische Modellierung und Optimierung</p>
             <div className='container  justify-items-center flex flex-col flex-nowrap h-1/5 place-items-center pb-4'>
 
                 <DismissableModal/>
