@@ -11,6 +11,7 @@ import Services from './services';
 import ScrollToTop from './stp'; 
 import About from './about';
 import Publication from './publication';
+import Service1 from './service1';
 
 
 
@@ -30,6 +31,7 @@ function App() {
       <Route path='/services' element={<div className='pt-8 bg-[#D8D9DA]'><Services/></div>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path= '/publication' element={<div className=''><Publication/></div>} />
+      <Route path='/service1' element={<Service1/>}/>
 
       </Routes>
     <FooterSitemapLinks/>

@@ -2,6 +2,10 @@ export default function Publication(){
     return(
         <div className="bg-[#D8D9DA] h-fit pt-20 sm:p-20 p-10">
         <h1 className="text-4xl mt-6">2023</h1>
+        <h2 className="text-2xl my-6">Analyse von Umweltauswirkungen infolge eingeerdeter Hoch- und Höchstspannungskabel unter natürlichen Bedingungen</h2>
+        <a target="_blank" href="https://www.researchgate.net/publication/374082612_Analyse_von_Umweltauswirkungen_infolge_eingeerdeter_Hoch-_und_Hochstspannungskabel_unter_naturlichen_Bedingungen"> <button type="submit" class="rounded-lg border-2 md:col-span-1 col-span-6 text-zinc-800 border-emerald-50 bg-zinc-200 text-slate-800 px-2 py-3 max-h-14 self-center hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 drop-shadow-md"
+            >Mehr Lesen </button></a>
+            <hr className="border-black mt-6"/>
         <h2 className="text-2xl my-6">Thermal performance of three horizontal ground heat exchanger systems: comparison of linear-loop, spiral-coil and slinky-coil arrangements</h2>
         <a target="_blank" href="https://www.researchgate.net/publication/372680232_Thermal_performance_of_three_horizontal_ground_heat_exchanger_systems_comparison_of_linear-loop_spiral-coil_and_slinky-coil_arrangements"> <button type="submit" class="rounded-lg border-2 md:col-span-1 col-span-6 text-zinc-800 border-emerald-50 bg-zinc-200 text-slate-800 px-2 py-3 max-h-14 self-center hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 drop-shadow-md"
             >Mehr Lesen </button></a>
