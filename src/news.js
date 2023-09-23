@@ -46,7 +46,10 @@ export default function News(){
 
           <SwiperSlide>
         <div className='border-2 w-fit my-6 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center '>
+        <a href={n2} target="_blank">
+          
             <img className='aspect-video' loading='lazy' src={n2} alt='service'/>
+        </a>
             <p className='text-center h-1/4 my-auto lg:text-lg text-base font-normal p-4'>Analyse von Umweltauswirkungen infolge eingeerdeter Hoch-
 und Höchstspannungskabel unter natürlichen Bedingungen</p>
             <div className='container  justify-items-center flex flex-col flex-nowrap h-1/5 place-items-center pb-4'>
@@ -59,7 +62,9 @@ und Höchstspannungskabel unter natürlichen Bedingungen</p>
         
         <SwiperSlide>
         <div className='border-2 w-fit my-6 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center '>
+        <a href={n1} target="_blank">
             <img className='aspect-video' loading='lazy' src={n1} alt='service'/>
+            </a>
             <p className='text-center h-1/4 my-auto lg:text-lg text-base font-normal p-4'>Horizontale Erdwärmetauscher zum 
             <br/>Heizen und Kühlen – numerische Modellierung und Optimierung</p>
             <div className='container  justify-items-center flex flex-col flex-nowrap h-1/5 place-items-center pb-4'>
@@ -72,7 +77,10 @@ und Höchstspannungskabel unter natürlichen Bedingungen</p>
 
         <SwiperSlide>
         <div className='border-2 w-fit my-6 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center '>
+        <a href={n4} target="_blank">
+
             <img className='aspect-video' loading='lazy' src={n4} alt='service'/>
+        </a>
             <p className='text-center h-1/5 my-auto lg:text-lg text-base font-normal p-4'>Optimierung des Systems für erneuerbare Energien durch eine geeignete Auslegung und ein vollständig gekoppeltes Modell</p>
             <div className='container  justify-items-center flex flex-col flex-nowrap h-1/5 place-items-center pb-4'>
 
@@ -87,8 +95,9 @@ und Höchstspannungskabel unter natürlichen Bedingungen</p>
             <SwiperSlide>
             <div>
             <div className='border-2 w-fit my-6 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center '>
-
+            <a href={n3} target="_blank">
                 <img className='aspect-video' src={n3} alt='service'/>
+                </a>
                 <p className='text-center h-1/5 my-auto lg:text-lg text-base font-normal p-4'>Standort-Stadt-Interaktionsmodellierung für Erdbebenszenarien durch fortschrittliche
                 Hybrid-BEM-FEM</p>
                 <div className='container  justify-items-center flex flex-col flex-nowrap place-items-center h-1/5 pb-4'>
