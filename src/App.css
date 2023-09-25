@@ -114,3 +114,13 @@ opacity: 1;
 .carousel-button.next{
   right: 1rem;
 }
+
+.swiper-button-prev {
+
+  color: red;
+}
+
+
+.swiper-button-next {
+  color: red;
+}
