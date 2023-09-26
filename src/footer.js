@@ -35,7 +35,7 @@ export default function FooterSitemapLinks() {
             <Footer.Title title="legal" />
             <Footer.LinkGroup col>
             <Link to={'/impressum'}>
-                Impressum
+                <p className=" hover:text-red-600">Impressum</p>
                 </Link>
             </Footer.LinkGroup>
           </div>

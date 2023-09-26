@@ -10,7 +10,7 @@ export default function DismissableModal2() {
 
   return (
     <>
-      <Button onClick={() => props.setOpenModal('dismissible')}>Mehr Lesen</Button>
+      <div className="rounded-lg border-2 md:col-span-1 col-span-6 text-zinc-800 border-emerald-50 bg-zinc-200 text-slate-800 px-2 py-2 max-h-14 self-center hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 drop-shadow-md cursor-pointer" onClick={() => props.setOpenModal('dismissible')}>Mehr Lesen</div>
       <Modal dismissible show={props.openModal === 'dismissible'} onClose={() => props.setOpenModal(undefined)}>
         <Modal.Header>Analyse von Umweltauswirkungen infolge eingeerdeter Hoch-
 und Höchstspannungskabel unter natürlichen Bedingungen</Modal.Header>
@@ -26,7 +26,7 @@ Unter dem Motto "Böden - divers & multifunktional" hat die GAE ein Poster zum T
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={() => props.setOpenModal(undefined)}>Schließen</Button>
+        <div className="rounded-lg border-2 md:col-span-1 col-span-6 text-zinc-800 border-emerald-50 bg-zinc-200 text-slate-800 px-2 py-2 max-h-14 self-center hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 drop-shadow-md cursor-pointer" onClick={() => props.setOpenModal(undefined)}>Schließen</div>
         </Modal.Footer>
       </Modal>
     </>

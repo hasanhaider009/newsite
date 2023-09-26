@@ -40,7 +40,8 @@ import main4 from './assets/landing3.JPG'
       className='h-full'
         alt="..."
         src={main3}
-      />
+        />
+    
       <img
       className='h-full'
         alt="..."
