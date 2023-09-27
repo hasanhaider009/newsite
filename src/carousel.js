@@ -1,6 +1,11 @@
 'use client';
 
-import { Carousel } from 'flowbite-react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import main2 from './assets/landing1.jpg'
 import main3 from './assets/landing2.jpg'
 import main4 from './assets/landing3.JPG'
@@ -35,23 +40,52 @@ import main4 from './assets/landing3.JPG'
     return (
       
       <div className='h-fit block'>
-    <Carousel className=' lg:h-screen md:h-[60vh] sm:h-[50vh] h-[30vh] rounded-none inset-x-0 lg:top-0 top-0'>
+    <Swiper className=' lg:h-screen md:h-[60vh] sm:h-[50vh] h-[30vh] rounded-none inset-x-0 lg:top-0 top-0'
+    modules={[Navigation, Pagination, Scrollbar, A11y]}
+    spaceBetween={50}
+    loop={true}
+    slidesPerView={2}
+    navigation
+    pagination={{ clickable: true }}
+    breakpoints={{
+        250: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+      
+      }}
+    onSwiper={(swiper) => console.log(swiper)}
+    onSlideChange={() => console.log('slide change')}>
+
+      <SwiperSlide className='h-full'>
+
       <img
-      className='h-full'
-        alt="..."
-        src={main3}
-        />
+      className='h-full w-full'
+      
+      alt="..."
+      src={main3}
+      />
+      </SwiperSlide>
+
+      <SwiperSlide className='h-full'>
+
     
       <img
-      className='h-full'
-        alt="..."
-        src={main4}
+      className='h-full w-full'
+      alt="..."
+      src={main4}
       />
+
+      </SwiperSlide>
+
+      <SwiperSlide className='h-full'>
+
       <img
-      className='h-full'
-        alt="..."
-        src={main2}
+      className='h-full w-full'
+      alt="..."
+      src={main2}
       />
+      </SwiperSlide>
       
         
 
@@ -59,8 +93,8 @@ import main4 from './assets/landing3.JPG'
 
 
 
-    </Carousel>
-    <div className="bannertext xl:flex-none flex flex-col flex-nowrap md:p-2 sm:pb-10 inset-x-0 sm:bottom-0 pt-2 md:h-[40vh] sm:h-[50vh] lg:h-[280px] xl:h-[45vh] h-[480px] px-6 lg:absolute justify-center">
+    </Swiper>
+    <div className="bannertext xl:flex-none flex flex-col flex-nowrap md:p-2 sm:pb-10 inset-x-0 sm:bottom-0 pt-2 md:h-[40vh] sm:h-[50vh] lg:h-[280px] xl:h-[45vh] h-[480px] px-6 lg:absolute justify-center z-20">
 
                 
                   <h1
