@@ -1,11 +1,11 @@
 'use client';
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide,} from 'swiper/react';
 import main2 from './assets/landing1.jpg'
 import main3 from './assets/landing2.jpg'
 import main4 from './assets/landing3.JPG'
@@ -40,12 +40,16 @@ import main4 from './assets/landing3.JPG'
     return (
       
       <div className='h-fit block'>
-    <Swiper className=' lg:h-screen md:h-[60vh] sm:h-[50vh] h-[30vh] rounded-none inset-x-0 lg:top-0 top-0'
-    modules={[Navigation, Pagination, Scrollbar, A11y]}
+    <Swiper className=' lg:h-screen md:h-[60vh] sm:h-[50vh] h-[30vh] rounded-none inset-x-0 lg:top-0 top-0 mySwiper'
+    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
     spaceBetween={50}
     loop={true}
     slidesPerView={2}
     navigation
+    autoplay={{
+      delay: 2000,
+      disableOnInteraction: false,
+    }}
     pagination={{ clickable: true }}
     breakpoints={{
         250: {
@@ -55,7 +59,7 @@ import main4 from './assets/landing3.JPG'
       
       }}
     onSwiper={(swiper) => console.log(swiper)}
-    onSlideChange={() => console.log('slide change')}>
+    onSlideChange={() => console.log('slide change')} >
 
       <SwiperSlide className='h-full'>
 
