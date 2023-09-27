@@ -19,7 +19,7 @@ function classNames(...classes) {
 
 export default function Navabar() {
   return (
-    <Disclosure as="nav" className="bannertext1 fixed z-20 w-full">
+    <Disclosure as="nav" className="bannertext1 fixed z-30 w-full">
       {({ open }) => (
         <>
           <div className="mx-auto px-2 md:px-6 lg:px-8 ">
