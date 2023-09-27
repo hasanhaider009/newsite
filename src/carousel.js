@@ -113,7 +113,7 @@ import main4 from './assets/landing3.JPG'
                   >
                   Kompetenz und Innovation
                   </p>
-                  <p className="max-[350px]:text-xs text-sm sm:text-base xl:text-lg text-white sm:mb-6 xl:px-36 lg:px-8 sm:pb-0 lg:pb-10 text-justify">GAE erbringt Dienstleistungen und entwickelt Lösungen in den Arbeitsfeldern:
+                  <p className="max-[330px]:text-xs text-sm sm:text-base xl:text-lg text-white sm:mb-6 xl:px-36 lg:px-8 sm:pb-0 lg:pb-10 sm:text-justify text-center">GAE erbringt Dienstleistungen und entwickelt Lösungen in den Arbeitsfeldern:
 
 Erdkabel & Freileitungen – Geothermie, Wärme & Kälte – Standorterkundung, geotechnische und bodenkundliche Laboranalysen & Baubegleitung – Geotechnik – UAV Monitoring & Infrastruktur GIS-Modellierung und Numerische Simulationen & KI.
 
