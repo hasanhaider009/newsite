@@ -6,7 +6,7 @@ export default function About3(){
             <h2 className="text-center  font-normal sm:pb-4 sm:text-6xl text-4xl md:pt-16 pt-4 underline decoration-2 underline-offset-[16px]">Highlights</h2>
 
             <div className='rounded-lg sm:mt-10 mt-4 flex flex-nowrap xl:px-20 px-6 md:flex-row flex-col justify-center content-center  md:pb-16'>
-            <div className="text-sm xl:text-xl font-normal block sm:pr-8 w-auto md:max-w-[50vw] md:order-1 order-2 justify-center content-center md:pb-0 pb-6 flex flex-col md:text-left text-center">
+            <div className="text-base xl:text-xl font-normal block sm:pr-8 w-auto md:max-w-[50vw] md:order-1 order-2 justify-center content-center md:pb-0 pb-6 flex flex-col text-left">
             <p  className='pt-2'>
                     GAE bietet vollständig gekoppelte
                     thermo-hydromechanisch-diffusive Simulationen für
