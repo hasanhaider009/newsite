@@ -10,10 +10,10 @@ export default function About2() {
       id="about"
       className="max-h-fit  bg-no-repeat bg-cover bg-fixed text-white target1"
     >
-      <h2 className="text-center font-normal pb-4 sm:text-6xl text-4xl underline decoration-2 underline-offset-[16px] xl:pt-16 pt-8">
+      <h2 className="text-center font-normal pb-4 sm:text-6xl text-4xl underline decoration-2 underline-offset-[16px] lg:pt-16 pt-14">
         Über uns
       </h2>
-      <div className="rounded-lg mt-10 flex flex-nowrap xl:px-16 px-6 md:flex-row flex-col justify-center content-center  md:pb-16">
+      <div className="rounded-lg sm:mt-10 flex flex-nowrap xl:px-16 px-6 md:flex-row flex-col justify-center content-center  md:pb-16">
         <img
           className="inline-block border-slate-800 justify-center md:max-h-[40vh] md:max-w-[50vw] aspect-video xl:order-1 order-1 xl:my-12 my-4"
           src={about}

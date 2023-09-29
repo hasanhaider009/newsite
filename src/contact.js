@@ -16,7 +16,7 @@ export default function Contact() {
         alt="contact"
       />
 
-      <div className="text-center grid xl:grid-cols-3 text-xl gap-5 text-stone-50 sm:px-48 container mx-auto py-16  place-items-center">
+      <div className="text-center grid xl:grid-cols-3 sm:text-xl gap-5 text-stone-50 sm:px-48 container mx-auto sm:py-16 py-6 place-items-center">
         <div className="">
           <p>
             GeoAnalysis Engineering GmbH,

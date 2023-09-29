@@ -7,7 +7,7 @@ export default function Impressum() {
 
   return (
     <>
-      <section className=" bg-white flex flex-col p-12 content-center  pt-20 items-center text-justify">
+      <section className=" bg-white flex flex-col  content-center container mx-auto p-10 pt-20 items-center text-left">
         <div className="text-4xl  font-semibold">Impressum</div>
 
         <div className="grid m-10  md:grid-cols-2 container grid-cols-1 text-center gap-8">
@@ -56,11 +56,11 @@ export default function Impressum() {
           </div>
         </div>
 
-        <div>
-          <h4 className="text-4xl font-semibold text-center pb-10">
-            Datenschutzerklärung
-          </h4>
+        <h4 className="sm:text-4xl text-2xl font-semibold container text-center pb-10">
+          Datenschutzerklärung
+        </h4>
 
+        <div className="px-0 container mx-auto">
           <h5>1) Einleitung und Kontaktdaten des Verantwortlichen</h5>
           <ul>
             <li>
