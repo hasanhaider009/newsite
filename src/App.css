@@ -1,61 +1,63 @@
-.bannertext{
-  background: rgb(255,255,255) !important;
-background: linear-gradient(180deg, rgba(83, 83, 83, 0.548) 0%, rgba(54, 54, 54, 0.993) 100%) !important;
-
+.bannertext {
+  background: rgb(255, 255, 255) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(83, 83, 83, 0.548) 0%,
+    rgba(54, 54, 54, 0.993) 100%
+  ) !important;
 }
-.bannertext1{
-  background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(128, 128, 128, 0) 0%, rgba(97, 97, 97, 0.637) 100%);
-
+.bannertext1 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(128, 128, 128, 0) 0%,
+    rgba(97, 97, 97, 0.637) 100%
+  );
 }
-body{
+body {
   background-color: #272829;
   margin: 0;
 }
-.target1{
+.target1 {
   background-color: #272829;
 }
-.target2{
-  background-color: #D8D9DA;
-    
+.target2 {
+  background-color: #d8d9da;
 }
-.target3{
-  
-background-color: white;
+.target3 {
+  background-color: white;
 }
 
-.target3 img{
+.target3 img {
   margin: auto;
 }
-.t1 img{
-
+.t1 img {
   height: 100px;
   width: 300px;
-  
 }
-.t2 p{
+.t2 p {
   margin-top: 1rem;
 }
 
-
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-.carousel{
+.carousel {
   width: auto;
   height: 100vh;
   position: relative;
 }
-.slide{
+.slide {
   position: absolute;
   inset: 0;
   opacity: 0;
 }
 
-
-.slide[data-active]{
-opacity: 1;
+.slide[data-active] {
+  opacity: 1;
 }
 
 .slide > img {
@@ -77,10 +79,8 @@ opacity: 1;
   transform: translateY(-50%);
   color: rgb(255, 255, 255);
   cursor: pointer;
-  border-radius: .1rem;
+  border-radius: 0.1rem;
   padding: 0.3rem;
-  
-
 }
 .carousel > ul {
   margin: 0;
@@ -95,9 +95,8 @@ opacity: 1;
   to {
     background-color: rgba(255, 255, 255, 0.2);
   }
-  
 }
-.carousel-button:hover{
+.carousel-button:hover {
   color: #dc2626;
   animation: animate;
   animation-duration: 200ms;
@@ -105,30 +104,26 @@ opacity: 1;
   animation-fill-mode: forwards;
 }
 
-
-
-.carousel-button.prev{
+.carousel-button.prev {
   left: 1rem;
 }
 
-.carousel-button.next{
+.carousel-button.next {
   right: 1rem;
 }
 
 .swiper-button-prev {
-
   color: red;
 }
-
 
 .swiper-button-next {
   color: red;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: red;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: red;
 }

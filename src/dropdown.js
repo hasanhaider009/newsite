@@ -1,9 +1,9 @@
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Dropdown() {
@@ -11,8 +11,11 @@ export default function Dropdown() {
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 rounded-lg border-2 text-black border-emerald-50 bg-zinc-200 text-slate-800 px-2 py-2 self-center hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 drop-shadow-md">
-        Geschäftsbereiche
-          <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
+          Geschäftsbereiche
+          <ChevronDownIcon
+            className="-mr-1 h-5 w-5 text-gray-400"
+            aria-hidden="true"
+          />
         </Menu.Button>
       </div>
 
@@ -32,12 +35,11 @@ export default function Dropdown() {
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
+                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    "block px-4 py-2 text-sm"
                   )}
                 >
-                  Hochspannungskabel
-– Erdkabel & Freileitungen
+                  Hochspannungskabel – Erdkabel & Freileitungen
                 </a>
               )}
             </Menu.Item>
@@ -46,12 +48,11 @@ export default function Dropdown() {
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
+                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    "block px-4 py-2 text-sm"
                   )}
                 >
-                  Tiefe und Flache
-Geothermie & Speichern
+                  Tiefe und Flache Geothermie & Speichern
                 </a>
               )}
             </Menu.Item>
@@ -60,8 +61,8 @@ Geothermie & Speichern
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
+                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    "block px-4 py-2 text-sm"
                   )}
                 >
                   UAV Monitoring & Infrastruktur GIS-Modellierung
@@ -69,84 +70,78 @@ Geothermie & Speichern
               )}
             </Menu.Item>
 
-              <Menu.Item className="hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 rounded-md">
+            <Menu.Item className="hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 rounded-md">
               {({ active }) => (
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
+                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    "block px-4 py-2 text-sm"
                   )}
                 >
-                    Innovatives &
-Nachhaltiges Materialdesign
-                  </a>
-                )}
-              </Menu.Item>
+                  Innovatives & Nachhaltiges Materialdesign
+                </a>
+              )}
+            </Menu.Item>
 
-              <Menu.Item className="hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 rounded-md">
+            <Menu.Item className="hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 rounded-md">
               {({ active }) => (
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
+                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    "block px-4 py-2 text-sm"
                   )}
                 >
-                    Standorterkundung
-& Bodenkunde
-                  </a>
-                )}
-              </Menu.Item>
+                  Standorterkundung & Bodenkunde
+                </a>
+              )}
+            </Menu.Item>
 
-              <Menu.Item className="hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 rounded-md">
+            <Menu.Item className="hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 rounded-md">
               {({ active }) => (
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
+                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    "block px-4 py-2 text-sm"
                   )}
                 >
-                    Laboranalysen –
-Boden, Fels & Beton
-                  </a>
-                )}
-              </Menu.Item>
+                  Laboranalysen – Boden, Fels & Beton
+                </a>
+              )}
+            </Menu.Item>
 
-              <Menu.Item className="hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 rounded-md">
+            <Menu.Item className="hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 rounded-md">
               {({ active }) => (
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
+                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    "block px-4 py-2 text-sm"
                   )}
                 >
-                    Geotechnik – Entwurf /
-Konstruktion / Prüfung
-                  </a>
-                )}
-              </Menu.Item>
+                  Geotechnik – Entwurf / Konstruktion / Prüfung
+                </a>
+              )}
+            </Menu.Item>
 
-              <Menu.Item className="hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 rounded-md">
+            <Menu.Item className="hover:bg-red-600 hover:text-zinc-200 ease-in duration-200 rounded-md">
               {({ active }) => (
                 <a
                   href="#"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
+                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    "block px-4 py-2 text-sm"
                   )}
                 >
-                    Komplexe Numerische
-Simulationen & KI
-                  </a>
-                )}
-              </Menu.Item>
-
+                  Komplexe Numerische Simulationen & KI
+                </a>
+              )}
+            </Menu.Item>
           </div>
         </Menu.Items>
       </Transition>
     </Menu>
-  )
+  );
 }
