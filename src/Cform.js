@@ -2,7 +2,7 @@ export default function Cform() {
   return (
     <form>
       <hr />
-      <div class="text-center grid grid-cols-5 gap-4 place-content-center px-10 py-8 rounded-md container mx-auto">
+      <div class="text-center grid grid-cols-5 gap-4 place-content-center sm:px-36 px-8 py-8 rounded-md mx-auto">
         <h2 className="py-3 md:col-span-5 col-span-6 text-4xl text-slate-50">
           Contact Form
         </h2>

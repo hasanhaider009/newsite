@@ -6,12 +6,14 @@ import About3 from "./about3";
 import Services from "./services";
 import News from "./news";
 import ScrollToTop from "./stp";
+import Sectors from "./sectors";
 
 export default function Home() {
   <ScrollToTop />;
   return (
     <div>
       <DefaultCarousel />
+      {/* <Sectors /> */}
 
       <Services />
       <About3 />

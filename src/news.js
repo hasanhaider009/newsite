@@ -13,7 +13,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./news.css";
 
 export default function News() {
   return (
@@ -22,7 +21,7 @@ export default function News() {
         News
       </h2>
       <Swiper
-        className="h-fit container mx-auto tar"
+        className="h-fit container mx-auto"
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={2}
@@ -41,8 +40,8 @@ export default function News() {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
-        <SwiperSlide className="sm:px-20 ">
-          <div className="border-2 w-fit mt-6 mb-12 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center ">
+        <SwiperSlide className="sm:px-20 px-12">
+          <div className="border-2 w-fit my-6 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center ">
             <a href={n2} target="_blank">
               <img
                 className="sm:aspect-video aspect-[4/3]"
@@ -51,7 +50,7 @@ export default function News() {
                 alt="service"
               />
             </a>
-            <p className="text-center h-20 my-auto lg:text-lg text-sm font-normal px-4 flex justify-center items-center">
+            <p className="text-center h-1/4 my-auto lg:text-lg text-sm font-normal p-4">
               Analyse von Umweltauswirkungen infolge eingeerdeter Hoch- und
               Höchstspannungskabel unter natürlichen Bedingungen
             </p>
@@ -61,8 +60,8 @@ export default function News() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="sm:px-20">
-          <div className="border-2 w-fit mt-6 mb-12 max-h-fit bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center ">
+        <SwiperSlide className="sm:px-20 px-12">
+          <div className="border-2 w-fit my-6 max-h-fit bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center ">
             <a href={n1} target="_blank">
               <img
                 className="sm:aspect-video aspect-[4/3]"
@@ -71,9 +70,10 @@ export default function News() {
                 alt="service"
               />
             </a>
-            <p className="text-center h-20 my-auto lg:text-lg text-sm font-normal px-4 flex justify-center items-center">
-              Horizontale Erdwärmetauscher zum Heizen und Kühlen – <br />{" "}
-              numerische Modellierung und Optimierung
+            <p className="text-center h-1/4 my-auto lg:text-lg text-sm font-normal p-4">
+              Horizontale Erdwärmetauscher zum
+              <br />
+              Heizen und Kühlen – numerische Modellierung und Optimierung
             </p>
             <div className="container  justify-items-center flex flex-col flex-nowrap h-1/5 place-items-center pb-4">
               <DismissableModal />
@@ -81,8 +81,8 @@ export default function News() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="sm:px-20">
-          <div className="border-2 w-fit mt-6 mb-12 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center ">
+        <SwiperSlide className="sm:px-20 px-12">
+          <div className="border-2 w-fit my-6 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center ">
             <a href={n4} target="_blank">
               <img
                 className="sm:aspect-video aspect-[4/3]"
@@ -91,7 +91,7 @@ export default function News() {
                 alt="service"
               />
             </a>
-            <p className="text-center h-20 my-auto lg:text-lg text-sm font-normal px-4 flex justify-center items-center">
+            <p className="text-center h-1/5 my-auto lg:text-lg text-sm font-normal p-4">
               Optimierung des Systems für erneuerbare Energien durch eine
               geeignete Auslegung und ein vollständig gekoppeltes Modell
             </p>
@@ -101,9 +101,9 @@ export default function News() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="sm:px-20">
+        <SwiperSlide className="sm:px-20 px-12">
           <div>
-            <div className="border-2 w-fit mt-6 mb-12 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center ">
+            <div className="border-2 w-fit my-6 bg-[#272829] text-zinc-200 shadow-md rounded-md flex flex-col place-items-center content-center ">
               <a href={n3} target="_blank">
                 <img
                   className="sm:aspect-video aspect-[4/3]"
@@ -111,7 +111,7 @@ export default function News() {
                   alt="service"
                 />
               </a>
-              <p className="text-center h-20 my-auto lg:text-lg text-sm font-normal px-4 flex justify-center items-center">
+              <p className="text-center h-1/5 my-auto lg:text-lg text-sm font-normal p-4">
                 Standort-Stadt-Interaktionsmodellierung für Erdbebenszenarien
                 durch fortschrittliche Hybrid-BEM-FEM
               </p>
